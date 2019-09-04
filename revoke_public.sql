@@ -1,0 +1,1 @@
+revoke all on schema public from public; -- how to remove public schema access on postgresql
