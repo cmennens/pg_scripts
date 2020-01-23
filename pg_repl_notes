@@ -1,0 +1,9 @@
+select pg_is_in_recovery(); -- Boolean value on slave to verify replication status
+
+select usename,
+       application_name,
+       client_addr,
+       backend_start,
+       state,
+       sync_state 
+ from pg_stat_replication; -- Run on primary to see details 
