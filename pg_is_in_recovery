@@ -1,0 +1,6 @@
+select pg_is_in_recovery(); -- run on slave to show a boolean value
+
+--  example:
+--  postgres=# select pg_is_in_recovery();
+--  [ RECORD 1 ]
+--  pg_is_in_recovery | t
