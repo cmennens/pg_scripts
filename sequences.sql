@@ -4,10 +4,6 @@ SELECT setval('seq_meh_id', MAX(id)) FROM meh;
 ALTER TABLE meh ALTER COLUMN id SET DEFAULT
 nextval('seq_meh_id');
 
--- # PostgreSQL documentation URL:
--- http://www.postgresql.org/docs/9.4/static/datatype-numeric.html#DATATYPE-SERIAL
-
---===================VERSION 2.0=====================
 
 CREATE vendor_seq start 7000;
 
