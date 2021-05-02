@@ -4,7 +4,6 @@ SELECT setval('seq_meh_id', MAX(id)) FROM meh;
 ALTER TABLE meh ALTER COLUMN id SET DEFAULT
 nextval('seq_meh_id');
 
-
 CREATE vendor_seq start 7000;
 
 CREATE TABLE vendor 
