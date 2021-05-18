@@ -1,3 +1,4 @@
+-- Create a sequence object in PostgreSQL --
 CREATE SEQUENCE seq_meh_id;
 SELECT setval('seq_meh_id', MAX(id)) FROM meh; 
 
