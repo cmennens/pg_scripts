@@ -1,6 +1,6 @@
 /*
 ===============================================================================
-Stored Procedure: find_long_running_queries
+Stored Procedure: sp_find_long_queries
 -------------------------------------------------------------------------------
 Purpose:
     - Detects long-running queries based on a specified threshold.
@@ -19,13 +19,13 @@ Parameters:
 Usage Examples:
 -------------------------------------------------------------------------------
 1. List all queries running longer than 10 minutes (DO NOT terminate):
-    CALL find_long_running_queries('10 minutes', FALSE);
+    CALL sp_find_long_queries('10 minutes', FALSE);
 
 2. Terminate all queries running longer than 15 minutes:
-    CALL find_long_running_queries('15 minutes', TRUE);
+    CALL sp_find_long_queries('15 minutes', TRUE);
 
 3. Use default settings (list queries > 5 minutes, no termination):
-    CALL find_long_running_queries();
+    CALL sp_find_long_queries();
 
 Security:
     - Ensure only trusted users have EXECUTE privileges on this procedure.
@@ -33,7 +33,7 @@ Security:
 ===============================================================================
 */
 
-CREATE OR REPLACE PROCEDURE find_long_running_queries(
+CREATE OR REPLACE PROCEDURE sp_find_long_queries(
     threshold INTERVAL DEFAULT '5 minutes',
     terminate BOOLEAN DEFAULT FALSE
 )
