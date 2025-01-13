@@ -1,4 +1,4 @@
-/*
+/***
 --------------------------------------------------------------------------------
 Stored Procedure: sp_check_database_sizes
 --------------------------------------------------------------------------------
@@ -34,7 +34,7 @@ Maintenance:
     - Extend with logging or alerts if necessary.
 
 --------------------------------------------------------------------------------
-*/
+***/
 
 CREATE OR REPLACE PROCEDURE sp_check_database_sizes()
 LANGUAGE plpgsql
