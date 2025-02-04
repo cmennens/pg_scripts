@@ -18,10 +18,10 @@ Output:
     - Size (Size) [in human-readable format, e.g., MB/GB]
 
 Author:
-    [Your Name]
+    Carlos Mennens
 
 Created On:
-    [Creation Date]
+    2024-10-30
 
 Notes:
     - If the user does not have the CONNECT privilege on a database,
